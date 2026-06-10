@@ -1,14 +1,12 @@
-// Challenge 1: Create a custom hook to fetch the first 151 Pokémon.
+// Challenge 1 — data helper (no fetch needed)
 //
-// API endpoint: https://pokeapi.co/api/v2/pokemon?limit=151
+// Import the local pokemon list and export a function or value that returns
+// the 151 names sorted alphabetically, with the first letter capitalised.
 //
-// The hook should return:
-//   - pokemonList: array of pokemon objects from the API
-//   - loading: boolean
-//   - error: string or null
-//
-// Use this hook in App.jsx to get the list.
+// You can use this directly in App.jsx — no hook required.
+// Feel free to rename or restructure this file if you prefer.
 
-export function usePokemon() {
-  // TODO: implement
-}
+import pokemonNames from "../pokemon.json";
+
+// TODO: export the sorted, capitalised list
+
