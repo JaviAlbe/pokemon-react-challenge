@@ -1,13 +1,15 @@
-// Challenge 3: Implement the Context API to manage the selected Pokémon.
+// Challenge 3 — Context API
 //
-// Create a PokemonContext and a PokemonProvider component that holds:
-//   - selectedPokemon: the currently selected Pokémon object (or null)
-//   - setSelectedPokemon: function to update it
+// Implement a PokemonContext and PokemonProvider that hold:
+//   - selectedPokemon: string | null  — the currently selected Pokémon name
+//   - setSelectedPokemon: function    — updates selectedPokemon
 //
-// Wrap your app with PokemonProvider in main.jsx (or App.jsx).
-// When a card is clicked, set it as the selected Pokémon via context.
-// Display the selected Pokémon's details somewhere outside the list
-// (e.g. a sidebar or a panel at the top) to show cross-tree state sharing.
+// Requirements:
+//   - Wrap the app with PokemonProvider (in main.jsx or App.jsx).
+//   - Clicking a PokemonCard sets it as selectedPokemon.
+//   - Clicking the same card again deselects it (sets it back to null).
+//   - The selected card should have a visually different background via the
+//     isSelected prop on PokemonCard — driven by this context value.
 
 import { createContext, useContext, useState } from "react";
 
