@@ -20,12 +20,11 @@ Before rendering, the list must be:
 
 ---
 
-### Challenge 2 — Search bar with debounce
+### Challenge 2 — Search bar
 
 Add a search input above the list that filters the displayed Pokémon by name in real time.
 
-The filtering must be **debounced** — avoid running the filter on every keystroke.  
-You may implement debounce manually or use any utility you prefer (`lodash.debounce`, etc.).
+Extra points for any additional improvements to the search experience.
 
 ---
 
