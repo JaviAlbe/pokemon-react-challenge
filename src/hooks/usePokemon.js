@@ -9,4 +9,3 @@
 import pokemonNames from "../pokemon.json";
 
 // TODO: export the sorted, capitalised list
-
