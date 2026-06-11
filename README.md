@@ -8,15 +8,13 @@ Download this repo and run it.
 
 ## Challenges
 
-### Challenge 1 — Card component (`src/components/PokemonCard.jsx`)
+### Challenge 1 — Sort and format the list
 
-Create a reusable and clickable `PokemonCard` component that accepts a `name` prop and renders it.
+The cards are already rendered but the names are neither sorted nor formatted correctly.
 
-Use this component in `App.jsx` to display all 151 Pokémon from `src/pokemon.json`.
-
-Before rendering, the list must be:
-- sorted **alphabetically**
-- each name with its **first letter capitalised** (e.g. `bulbasaur` → `Bulbasaur`)
+Make sure that:
+- the list is sorted **alphabetically**
+- each name has its **first letter capitalised** (e.g. `bulbasaur` → `Bulbasaur`)
 
 ---
 
