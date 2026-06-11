@@ -22,7 +22,7 @@ Make sure that:
 
 Add a search input above the list that filters the displayed Pokémon by name in real time.
 
-Extra points for any additional improvements to the search experience.
+Extra points for any additional improvements to the search experience and efficiency.
 
 ---
 
