@@ -41,4 +41,6 @@ Requirements:
 
 - Styling is not evaluated — keep it minimal and focus on functionality.
 - You are free to restructure files as you see fit.
-- No AI assistants are allowed (whether in the IDE or any other type). You may use a web browser to consult documentation, Stack Overflow, etc., as long as the interviewers can see what you search for.
+- No AI assistants are allowed (whether in the IDE or any other type).
+- Only official documentation is allowed as reference (e.g. [React docs](https://react.dev), [MDN](https://developer.mozilla.org)). No Stack Overflow, Medium, blogs, or similar sites.
+- The interviewers must be able to see everything you search for at all times.
