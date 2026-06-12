@@ -1,7 +1,6 @@
 import { useState, useRef } from "react";
 import { PokemonCard } from "./PokemonCard";
 import { usePokemonContext } from "../context/PokemonContext";
-import { pokemonList } from "../hooks/usePokemon";
 
 function useDebounce(fn, delay) {
   const timer = useRef(null);
@@ -11,7 +10,13 @@ function useDebounce(fn, delay) {
   };
 }
 
+const pokemonList = (data) =>
+  data
+    .map((name) => name.charAt(0).toUpperCase() + name.slice(1))
+    .sort((a, b) => a.localeCompare(b));
+
 export function PokemonList({ data }) {
+  const list = pokemonList(data);
   const [query, setQuery] = useState("");
   const [displayQuery, setDisplayQuery] = useState("");
   const { selectedPokemon, selectPokemon } = usePokemonContext();
@@ -23,7 +28,7 @@ export function PokemonList({ data }) {
     debouncedSetDisplay(e.target.value);
   }
 
-  const filtered = pokemonList.filter((name) =>
+  const filtered = list.filter((name) =>
     name.toLowerCase().includes(displayQuery.toLowerCase())
   );
 
