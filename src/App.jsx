@@ -1,16 +1,12 @@
 import "./index.css";
 import pokemonNames from "./pokemon.json";
-import { PokemonCard } from "./components/PokemonCard";
+import { PokemonList } from "./components/PokemonList";
 
 function App() {
   return (
-    <div>
+    <div style={{ padding: "16px" }}>
       <h1>Pokédex</h1>
-      <div>
-        {pokemonNames.map((name) => (
-          <PokemonCard key={name} name={name} onClick={() => {}} />
-        ))}
-      </div>
+      <PokemonList data={pokemonNames} />
     </div>
   );
 }
